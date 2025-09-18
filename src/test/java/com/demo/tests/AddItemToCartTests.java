@@ -1,5 +1,6 @@
 package com.demo.tests;
 
+import com.demoWeb.data.LoginData;
 import com.demoWeb.models.RegisterUser;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -16,8 +17,8 @@ public class AddItemToCartTests extends TestBase {
         }
             app.getUserLogin().clickOnLoginLink();
             app.getUserLogin().fillLoginForm(new RegisterUser()
-                    .setEmail("test345demoWeb#@mail.com")
-                    .setPassword("test345demoWeb#"));
+                    .setEmail(LoginData.EMAIL)
+                    .setPassword(LoginData.PASSWORD));
             app.getUserLogin().clickOnLoginButton();
 
     }

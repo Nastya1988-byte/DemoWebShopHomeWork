@@ -23,9 +23,7 @@ public class TestBase {
 
     @AfterMethod(enabled = false)
     public void tearDown(){
-        if (app != null) {
             app.stop();
-        }
     }
 
     @BeforeMethod

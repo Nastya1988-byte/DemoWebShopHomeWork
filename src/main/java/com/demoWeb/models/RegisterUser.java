@@ -1,7 +1,7 @@
 package com.demoWeb.models;
 
-public class RegisterUser{
-   private String email;
+public class RegisterUser {
+    private String email;
     private String password;
 
     public String getEmail() {

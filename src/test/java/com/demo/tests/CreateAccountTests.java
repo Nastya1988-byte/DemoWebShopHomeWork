@@ -1,6 +1,8 @@
 package com.demo.tests;
 
+import com.demoWeb.data.UserData;
 import com.demoWeb.models.User;
+import com.demoWeb.utils.DataProviders;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -13,31 +15,38 @@ public class CreateAccountTests extends TestBase {
             app.getUserRegister().clickOnLogOutButton();
         }
     }
-    @Test
+    @Test(enabled = false)
     public void newUserRegistrationPositiveTest() {
-        String email = "test" + System.currentTimeMillis() + "@mail.com";
-//        int i = (int)((System.currentTimeMillis()/1000)%3600);
+
         app.getUserRegister().clickOnRegisterLink();
         app.getUserRegister().fillRegisterLoginForm(new User()
-                .setName("Anastasiia")
-                .setLastName("Buch")
-                .setEmail(email)
-                .setPassword("test3457demoWeb#")
-                .setConfirmPassword("test3457demoWeb#"));
+                .setName(UserData.NAME)
+                .setLastName(UserData.LastNAME)
+                .setEmail(UserData.EMAIL)
+                .setPassword(UserData.PASSWORD)
+                .setConfirmPassword(UserData.ConfirmPASSWORD));
+        app.getUserRegister().clickOnRegisterButton();
+        app.getUserRegister().clickOnContinueButton();
+    }
+    @Test(dataProvider = "newUserRegistrationWithCsv", dataProviderClass = DataProviders.class)
+    public void newUserRegistrationPositiveWithCsvFileTest(User user) {
+
+        app.getUserRegister().clickOnRegisterLink();
+        app.getUserRegister().fillRegisterLoginForm(user);
         app.getUserRegister().clickOnRegisterButton();
         app.getUserRegister().clickOnContinueButton();
     }
 
     @Test
     public void newUserRegistrationNegativeTest(){
-        String existingEmail = "existing_user@mail.com";
+
         app.getUserRegister().clickOnRegisterLink();
         app.getUserRegister().fillRegisterLoginForm(new User()
-                .setName("Anastasiia")
-                .setLastName("Buch")
-                .setEmail(existingEmail)
-                .setPassword("test345demoWeb#")
-                .setConfirmPassword("test345demoWeb#"));
+                .setName(UserData.NAME)
+                .setLastName(UserData.LastNAME)
+                .setEmail(UserData.EMAIL)
+                .setPassword(UserData.PASSWORD)
+                .setConfirmPassword(UserData.ConfirmPASSWORD));
         app.getUserRegister().clickOnRegisterButton();
         Assert.assertTrue(app.getUserRegister().isErrorMessagePresent());
     }

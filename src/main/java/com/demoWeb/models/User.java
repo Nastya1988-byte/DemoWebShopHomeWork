@@ -3,7 +3,7 @@ package com.demoWeb.models;
 public class User {
     private String name;
     private String lastName;
-    String email;
+    private String email;
     private String password;
     private String confirmPassword;
 
