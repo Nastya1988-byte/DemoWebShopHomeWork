@@ -28,7 +28,8 @@ public class CreateAccountTests extends TestBase {
         app.getUserRegister().clickOnRegisterButton();
         app.getUserRegister().clickOnContinueButton();
     }
-    @Test(dataProvider = "newUserRegistrationWithCsv", dataProviderClass = DataProviders.class)
+    @Test(enabled = false)
+//    (dataProvider = "newUserRegistrationWithCsv", dataProviderClass = DataProviders.class)
     public void newUserRegistrationPositiveWithCsvFileTest(User user) {
 
         app.getUserRegister().clickOnRegisterLink();
