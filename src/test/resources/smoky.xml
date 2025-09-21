@@ -9,6 +9,11 @@
                     <exclude name=".*Negative.*"></exclude>
                 </methods>
             </class>
+            <class name="com.demo.tests.CreateAccountTests">
+                <methods>
+                    <exclude name=".*From.*"></exclude>
+                </methods>
+            </class>
             <class name="com.demo.tests.AddItemToCartTests"/>
         </classes>
     </test>
