@@ -1,6 +1,6 @@
 package com.demo.tests;
 
-import com.demoWeb.fw.ApplicationMeneger;
+import com.demoWeb.fw.ApplicationManager;
 import org.openqa.selenium.remote.Browser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,7 +13,7 @@ public class TestBase {
 
     Logger logger = LoggerFactory.getLogger(TestBase.class);
 
-    protected ApplicationMeneger app = new ApplicationMeneger(System
+    protected ApplicationManager app = new ApplicationManager(System
             .getProperty("browser", Browser.CHROME.browserName()));
 
     @BeforeMethod
