@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.demo.tests.HomePageTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-09-21T11:38:40" hostname="DOM" time="0.015">
+<testsuite name="com.demo.tests.HomePageTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-09-21T12:04:45" hostname="DOM" time="0.037">
   <properties/>
-  <testcase name="isHomePagePresentTest" classname="com.demo.tests.HomePageTest" time="0.015"/>
-  <system-out><![CDATA[13:38:39.439 [Test worker] INFO  com.demoWeb.fw.ApplicationManager -- Tests start in Chrome browser
-13:38:40.270 [Test worker] INFO  com.demo.tests.TestBase -- Start testisHomePagePresentTest
-13:38:40.270 [Test worker] INFO  com.demoWeb.utils.MyListener -- Before find elements By.xpath: //h2[contains(text(),'Welcome to our store')]
-13:38:40.271 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:40.293 [Test worker] INFO  com.demoWeb.utils.MyListener -- List size is 1
-13:38:40.293 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:40.294 [Test worker] INFO  com.demoWeb.utils.MyListener -- Before find elements By.xpath: //h2[contains(text(),'Welcome to our store')]
-13:38:40.296 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:40.309 [Test worker] INFO  com.demoWeb.utils.MyListener -- List size is 1
-13:38:40.309 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:40.310 [Test worker] INFO  com.demo.tests.TestBase -- PASSED: isHomePagePresentTest
-13:38:40.310 [Test worker] INFO  com.demo.tests.TestBase -- Stop test
-13:38:40.310 [Test worker] INFO  com.demo.tests.TestBase -- *********************************************************
+  <testcase name="isHomePagePresentTest" classname="com.demo.tests.HomePageTest" time="0.037"/>
+  <system-out><![CDATA[14:04:44.461 [Test worker] INFO  com.demoWeb.fw.ApplicationManager -- Tests start in Chrome browser
+14:04:45.449 [Test worker] INFO  com.demo.tests.TestBase -- Start testisHomePagePresentTest
+14:04:45.453 [Test worker] INFO  com.demoWeb.utils.MyListener -- Before find elements By.xpath: //h2[contains(text(),'Welcome to our store')]
+14:04:45.453 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:45.502 [Test worker] INFO  com.demoWeb.utils.MyListener -- List size is 1
+14:04:45.503 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:45.506 [Test worker] INFO  com.demoWeb.utils.MyListener -- Before find elements By.xpath: //h2[contains(text(),'Welcome to our store')]
+14:04:45.506 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:45.541 [Test worker] INFO  com.demoWeb.utils.MyListener -- List size is 1
+14:04:45.541 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:45.542 [Test worker] INFO  com.demo.tests.TestBase -- PASSED: isHomePagePresentTest
+14:04:45.542 [Test worker] INFO  com.demo.tests.TestBase -- Stop test
+14:04:45.543 [Test worker] INFO  com.demo.tests.TestBase -- *********************************************************
 ]]></system-out>
-  <system-err><![CDATA[????. 21, 2025 1:38:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <system-err><![CDATA[????. 21, 2025 2:04:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 140
-????. 21, 2025 1:38:39 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+????. 21, 2025 2:04:44 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
 WARNING: Unable to find version of CDP to use for 140.0.7339.128. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.30.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
 </testsuite>

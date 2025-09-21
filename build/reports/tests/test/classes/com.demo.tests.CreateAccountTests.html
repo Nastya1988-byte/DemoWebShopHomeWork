@@ -23,25 +23,25 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">6</div>
+<div class="counter">5</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">4</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="ignored">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>ignored</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">28.746s</div>
+<div class="counter">13.153s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">20%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,376 +61,16 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
+<a href="#tab1">Standard output</a>
 </li>
 <li>
-<a href="#tab2">Standard output</a>
-</li>
-<li>
-<a href="#tab3">Standard error</a>
+<a href="#tab2">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="newUserRegistrationPositiveWithCsvFileTest[0](com.demoWeb.models.User@630b6190)"></a>
-<h3 class="failures">newUserRegistrationPositiveWithCsvFileTest[0](com.demoWeb.models.User@630b6190)</h3>
-<span class="code">
-<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@class='button-1 register-continue-button']&quot;}
-  (Session info: chrome=140.0.7339.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.30.0', revision: '509c7f17cc*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.16'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [52be67bb080a66e42788dd21df1ade0a, findElement {using=xpath, value=//input[@class='button-1 register-continue-button']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\belit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58946}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58946/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 52be67bb080a66e42788dd21df1ade0a
-	at java.base@17.0.16/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base@17.0.16/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base@17.0.16/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base@17.0.16/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base@17.0.16/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at app//org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at app//org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at app//org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at jdk.internal.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
-	at java.base@17.0.16/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.16/java.lang.reflect.Method.invoke(Method.java:568)
-	at app//org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:315)
-	at app//org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
-	at app//org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxyFactory$3(WebDriverDecorator.java:405)
-	at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$DDYnHG4v.findElement(Unknown Source)
-	at app//com.demoWeb.fw.BaseHelper.click(BaseHelper.java:24)
-	at app//com.demoWeb.fw.UserRegisterHelper.clickOnContinueButton(UserRegisterHelper.java:23)
-	at app//com.demo.tests.CreateAccountTests.newUserRegistrationPositiveWithCsvFileTest(CreateAccountTests.java:37)
-	at java.base@17.0.16/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.16/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.16/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.16/java.lang.reflect.Method.invoke(Method.java:568)
-	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at app//org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at app//org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at app//org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at app//org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at app//org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base@17.0.16/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at app//org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at app//org.testng.TestRunner.run(TestRunner.java:616)
-	at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at app//org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at app//org.testng.TestNG.runSuites(TestNG.java:1112)
-	at app//org.testng.TestNG.run(TestNG.java:1079)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:153)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
-	at java.base@17.0.16/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.16/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.16/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.16/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
-	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="newUserRegistrationPositiveWithCsvFileTest[1](com.demoWeb.models.User@642857e0)"></a>
-<h3 class="failures">newUserRegistrationPositiveWithCsvFileTest[1](com.demoWeb.models.User@642857e0)</h3>
-<span class="code">
-<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@class='button-1 register-continue-button']&quot;}
-  (Session info: chrome=140.0.7339.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.30.0', revision: '509c7f17cc*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.16'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8254dba99ad099dd00f487d577e998a0, findElement {using=xpath, value=//input[@class='button-1 register-continue-button']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\belit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58995}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58995/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8254dba99ad099dd00f487d577e998a0
-	at java.base@17.0.16/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base@17.0.16/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base@17.0.16/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base@17.0.16/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base@17.0.16/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at app//org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at app//org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at app//org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at jdk.internal.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
-	at java.base@17.0.16/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.16/java.lang.reflect.Method.invoke(Method.java:568)
-	at app//org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:315)
-	at app//org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
-	at app//org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxyFactory$3(WebDriverDecorator.java:405)
-	at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$hqHrNHCi.findElement(Unknown Source)
-	at app//com.demoWeb.fw.BaseHelper.click(BaseHelper.java:24)
-	at app//com.demoWeb.fw.UserRegisterHelper.clickOnContinueButton(UserRegisterHelper.java:23)
-	at app//com.demo.tests.CreateAccountTests.newUserRegistrationPositiveWithCsvFileTest(CreateAccountTests.java:37)
-	at java.base@17.0.16/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.16/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.16/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.16/java.lang.reflect.Method.invoke(Method.java:568)
-	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at app//org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at app//org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at app//org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at app//org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at app//org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base@17.0.16/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at app//org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at app//org.testng.TestRunner.run(TestRunner.java:616)
-	at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at app//org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at app//org.testng.TestNG.runSuites(TestNG.java:1112)
-	at app//org.testng.TestNG.run(TestNG.java:1079)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:153)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
-	at java.base@17.0.16/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.16/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.16/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.16/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
-	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="newUserRegistrationPositiveWithCsvFileTest[2](com.demoWeb.models.User@1536ea40)"></a>
-<h3 class="failures">newUserRegistrationPositiveWithCsvFileTest[2](com.demoWeb.models.User@1536ea40)</h3>
-<span class="code">
-<pre>org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: unable to send message to renderer
-  (Session info: chrome=140.0.7339.128)
-Build info: version: '4.30.0', revision: '509c7f17cc*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.16'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [84ed2d767b534620e0a63745b7c18cb9, findElement {using=xpath, value=//input[@class='button-1 register-continue-button']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\belit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59031}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59031/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 84ed2d767b534620e0a63745b7c18cb9
-	at java.base@17.0.16/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base@17.0.16/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base@17.0.16/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base@17.0.16/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base@17.0.16/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at app//org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at app//org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at app//org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at jdk.internal.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
-	at java.base@17.0.16/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.16/java.lang.reflect.Method.invoke(Method.java:568)
-	at app//org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:315)
-	at app//org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
-	at app//org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxyFactory$3(WebDriverDecorator.java:405)
-	at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$8Y9VDCla.findElement(Unknown Source)
-	at app//com.demoWeb.fw.BaseHelper.click(BaseHelper.java:24)
-	at app//com.demoWeb.fw.UserRegisterHelper.clickOnContinueButton(UserRegisterHelper.java:23)
-	at app//com.demo.tests.CreateAccountTests.newUserRegistrationPositiveWithCsvFileTest(CreateAccountTests.java:37)
-	at java.base@17.0.16/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.16/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.16/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.16/java.lang.reflect.Method.invoke(Method.java:568)
-	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at app//org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at app//org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at app//org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at app//org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at app//org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base@17.0.16/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at app//org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at app//org.testng.TestRunner.run(TestRunner.java:616)
-	at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at app//org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at app//org.testng.TestNG.runSuites(TestNG.java:1112)
-	at app//org.testng.TestNG.run(TestNG.java:1079)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:153)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
-	at java.base@17.0.16/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.16/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.16/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.16/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
-	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="stopTest"></a>
-<h3 class="failures">stopTest</h3>
-<span class="code">
-<pre>org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '4.30.0', revision: '509c7f17cc*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.16'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [84ed2d767b534620e0a63745b7c18cb9, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\belit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59031}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59031/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 84ed2d767b534620e0a63745b7c18cb9
-	at java.base@17.0.16/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base@17.0.16/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base@17.0.16/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base@17.0.16/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base@17.0.16/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at app//org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:334)
-	at java.base@17.0.16/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.16/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.16/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.16/java.lang.reflect.Method.invoke(Method.java:568)
-	at app//org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:315)
-	at app//org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
-	at app//org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxyFactory$3(WebDriverDecorator.java:405)
-	at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$8Y9VDCla.getScreenshotAs(Unknown Source)
-	at app//com.demoWeb.fw.BaseHelper.takeScreenshot(BaseHelper.java:32)
-	at app//com.demo.tests.TestBase.stopTest(TestBase.java:42)
-	at java.base@17.0.16/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.16/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.16/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.16/java.lang.reflect.Method.invoke(Method.java:568)
-	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at app//org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at app//org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at app//org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-	at app//org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
-	at app//org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
-	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at app//org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at app//org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at app//org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at app//org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base@17.0.16/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at app//org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at app//org.testng.TestRunner.run(TestRunner.java:616)
-	at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at app//org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at app//org.testng.TestNG.runSuites(TestNG.java:1112)
-	at app//org.testng.TestNG.run(TestNG.java:1079)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:153)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
-	at java.base@17.0.16/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.16/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.16/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.16/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
-	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -442,437 +82,464 @@ Session ID: 84ed2d767b534620e0a63745b7c18cb9
 </thead>
 <tr>
 <td class="success">newUserRegistrationNegativeTest</td>
-<td class="success">1.768s</td>
+<td class="success">1.917s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">newUserRegistrationPositiveWithCsvFileTest[0](com.demoWeb.models.User@630b6190)</td>
-<td class="failures">11.137s</td>
-<td class="failures">failed</td>
+<td class="success">newUserRegistrationPositiveWithCsvFileTest[0](com.demoWeb.models.User@5922d3e9)</td>
+<td class="success">2.668s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">newUserRegistrationPositiveWithCsvFileTest[1](com.demoWeb.models.User@642857e0)</td>
-<td class="failures">11.069s</td>
-<td class="failures">failed</td>
+<td class="success">newUserRegistrationPositiveWithCsvFileTest[1](com.demoWeb.models.User@670f2466)</td>
+<td class="success">2.711s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">newUserRegistrationPositiveWithCsvFileTest[2](com.demoWeb.models.User@1536ea40)</td>
-<td class="failures">4.714s</td>
-<td class="failures">failed</td>
+<td class="success">newUserRegistrationPositiveWithCsvFileTest[2](com.demoWeb.models.User@2693c618)</td>
+<td class="success">2.858s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="skipped">newUserRegistrationPositiveWithCsvFileTest[3](com.demoWeb.models.User@66e21568)</td>
-<td class="skipped">-</td>
-<td class="skipped">ignored</td>
-</tr>
-<tr>
-<td class="failures">stopTest</td>
-<td class="failures">0.058s</td>
-<td class="failures">failed</td>
+<td class="success">newUserRegistrationPositiveWithCsvFileTest[3](com.demoWeb.models.User@3bb9ca38)</td>
+<td class="success">2.999s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>13:38:03.385 [Test worker] INFO  com.demoWeb.fw.ApplicationManager -- Tests start in Chrome browser
-13:38:04.230 [Test worker] INFO  com.demo.tests.TestBase -- Start testnewUserRegistrationNegativeTest
-13:38:04.232 [Test worker] INFO  com.demoWeb.utils.MyListener -- Before find elements By.cssSelector: [href='/register']
-13:38:04.232 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:04.254 [Test worker] INFO  com.demoWeb.utils.MyListener -- List size is 1
-13:38:04.255 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:04.255 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.xpath: //a[text()='Register']
-13:38:04.255 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:04.273 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.xpath: //a[text()='Register']
-13:38:04.273 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:04.695 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: FirstName
-13:38:04.695 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:04.706 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: FirstName
-13:38:04.706 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:04.761 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: FirstName
-13:38:04.761 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:04.769 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: FirstName
-13:38:04.769 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:04.788 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: FirstName
-13:38:04.788 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:04.794 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: FirstName
-13:38:04.794 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:04.833 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: LastName
-13:38:04.833 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:04.842 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: LastName
-13:38:04.842 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:04.888 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: LastName
-13:38:04.888 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:04.895 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: LastName
-13:38:04.895 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:04.917 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: LastName
-13:38:04.917 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:04.924 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: LastName
-13:38:04.924 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:04.948 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Email
-13:38:04.948 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:04.957 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Email
-13:38:04.957 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:04.998 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Email
-13:38:04.999 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:05.005 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Email
-13:38:05.005 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:05.020 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Email
-13:38:05.020 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:05.029 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Email
-13:38:05.029 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:05.072 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Password
-13:38:05.072 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:05.083 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Password
-13:38:05.084 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:05.127 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Password
-13:38:05.127 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:05.137 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Password
-13:38:05.137 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:05.155 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Password
-13:38:05.155 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:05.162 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Password
-13:38:05.162 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:05.202 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: ConfirmPassword
-13:38:05.202 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:05.215 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: ConfirmPassword
-13:38:05.215 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:05.260 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: ConfirmPassword
-13:38:05.260 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:05.269 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: ConfirmPassword
-13:38:05.269 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:05.288 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: ConfirmPassword
-13:38:05.288 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:05.295 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: ConfirmPassword
-13:38:05.295 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:05.332 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: register-button
-13:38:05.332 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:05.340 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: register-button
-13:38:05.343 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:05.394 [Test worker] INFO  com.demoWeb.utils.MyListener -- Before find elements By.cssSelector: div[class='validation-summary-errors'] ul li
-13:38:05.394 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:06.023 [Test worker] INFO  com.demoWeb.utils.MyListener -- List size is 1
-13:38:06.023 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:06.023 [Test worker] INFO  com.demo.tests.TestBase -- PASSED: newUserRegistrationNegativeTest
-13:38:06.023 [Test worker] INFO  com.demo.tests.TestBase -- Stop test
-13:38:06.026 [Test worker] INFO  com.demo.tests.TestBase -- *********************************************************
-13:38:06.796 [Test worker] INFO  com.demoWeb.fw.ApplicationManager -- Tests start in Chrome browser
-13:38:07.610 [Test worker] INFO  com.demo.tests.TestBase -- Start testnewUserRegistrationPositiveWithCsvFileTest
-13:38:07.612 [Test worker] INFO  com.demoWeb.utils.MyListener -- Before find elements By.cssSelector: [href='/register']
-13:38:07.613 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:07.651 [Test worker] INFO  com.demoWeb.utils.MyListener -- List size is 1
-13:38:07.652 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:07.653 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.xpath: //a[text()='Register']
-13:38:07.653 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:07.668 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.xpath: //a[text()='Register']
-13:38:07.668 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:08.157 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: FirstName
-13:38:08.158 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:08.169 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: FirstName
-13:38:08.169 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:08.221 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: FirstName
-13:38:08.221 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:08.234 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: FirstName
-13:38:08.234 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:08.244 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: FirstName
-13:38:08.244 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:08.264 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: FirstName
-13:38:08.266 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:08.297 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: LastName
-13:38:08.297 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:08.297 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: LastName
-13:38:08.297 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:08.346 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: LastName
-13:38:08.347 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:08.351 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: LastName
-13:38:08.352 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:08.367 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: LastName
-13:38:08.367 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:08.374 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: LastName
-13:38:08.374 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:08.391 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Email
-13:38:08.391 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:08.400 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Email
-13:38:08.400 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:08.434 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Email
-13:38:08.435 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:08.439 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Email
-13:38:08.439 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:08.456 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Email
-13:38:08.456 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:08.462 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Email
-13:38:08.462 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:08.489 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Password
-13:38:08.489 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:08.498 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Password
-13:38:08.498 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:08.535 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Password
-13:38:08.536 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:08.540 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Password
-13:38:08.541 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:08.544 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Password
-13:38:08.544 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:08.564 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Password
-13:38:08.564 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:08.588 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: ConfirmPassword
-13:38:08.589 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:08.596 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: ConfirmPassword
-13:38:08.596 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:08.631 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: ConfirmPassword
-13:38:08.631 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:08.637 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: ConfirmPassword
-13:38:08.637 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:08.654 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: ConfirmPassword
-13:38:08.654 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:08.660 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: ConfirmPassword
-13:38:08.661 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:08.686 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: register-button
-13:38:08.686 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:08.694 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: register-button
-13:38:08.694 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:08.739 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.xpath: //input[@class='button-1 register-continue-button']
-13:38:08.739 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:18.789 [Test worker] INFO  com.demoWeb.utils.MyListener -- The test have a problem
-13:38:18.789 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:18.789 [Test worker] INFO  com.demoWeb.utils.MyListener -- Method --&gt; findElement
-13:38:18.789 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:18.789 [Test worker] INFO  com.demoWeb.utils.MyListener -- TargetException --&gt; org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@class='button-1 register-continue-button']&quot;}
-  (Session info: chrome=140.0.7339.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.30.0', revision: '509c7f17cc*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.16'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [52be67bb080a66e42788dd21df1ade0a, findElement {using=xpath, value=//input[@class='button-1 register-continue-button']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\belit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58946}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58946/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 52be67bb080a66e42788dd21df1ade0a
-13:38:18.789 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:18.789 [Test worker] INFO  com.demoWeb.utils.MyListener -- Object --&gt; ChromeDriver: chrome on windows (52be67bb080a66e42788dd21df1ade0a)
-13:38:18.789 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:18.969 [Test worker] ERROR com.demo.tests.TestBase -- FAILED: newUserRegistrationPositiveWithCsvFileTest Screenshot path: C:\JAVA\DemoWebShopHomeWork\screenshots\scree - 1758454698945.png
-13:38:18.969 [Test worker] INFO  com.demo.tests.TestBase -- Stop test
-13:38:18.969 [Test worker] INFO  com.demo.tests.TestBase -- *********************************************************
-13:38:19.746 [Test worker] INFO  com.demoWeb.fw.ApplicationManager -- Tests start in Chrome browser
-13:38:20.558 [Test worker] INFO  com.demo.tests.TestBase -- Start testnewUserRegistrationPositiveWithCsvFileTest
-13:38:20.559 [Test worker] INFO  com.demoWeb.utils.MyListener -- Before find elements By.cssSelector: [href='/register']
-13:38:20.560 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:20.584 [Test worker] INFO  com.demoWeb.utils.MyListener -- List size is 1
-13:38:20.584 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:20.585 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.xpath: //a[text()='Register']
-13:38:20.585 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:20.601 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.xpath: //a[text()='Register']
-13:38:20.602 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:21.024 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: FirstName
-13:38:21.024 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:21.037 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: FirstName
-13:38:21.037 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:21.099 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: FirstName
-13:38:21.099 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:21.099 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: FirstName
-13:38:21.099 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:21.129 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: FirstName
-13:38:21.129 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:21.135 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: FirstName
-13:38:21.135 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:21.163 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: LastName
-13:38:21.163 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:21.163 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: LastName
-13:38:21.163 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:21.215 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: LastName
-13:38:21.216 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:21.221 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: LastName
-13:38:21.221 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:21.256 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: LastName
-13:38:21.257 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:21.265 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: LastName
-13:38:21.265 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:21.283 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Email
-13:38:21.283 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:21.289 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Email
-13:38:21.290 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:21.324 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Email
-13:38:21.324 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:21.332 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Email
-13:38:21.332 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:21.346 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Email
-13:38:21.346 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:21.351 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Email
-13:38:21.351 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:21.381 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Password
-13:38:21.381 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:21.388 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Password
-13:38:21.388 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:21.422 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Password
-13:38:21.423 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:21.428 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Password
-13:38:21.428 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:21.445 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Password
-13:38:21.445 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:21.450 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Password
-13:38:21.450 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:21.478 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: ConfirmPassword
-13:38:21.478 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:21.478 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: ConfirmPassword
-13:38:21.478 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:21.518 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: ConfirmPassword
-13:38:21.519 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:21.525 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: ConfirmPassword
-13:38:21.526 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:21.541 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: ConfirmPassword
-13:38:21.541 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:21.547 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: ConfirmPassword
-13:38:21.547 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:21.573 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: register-button
-13:38:21.573 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:21.576 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: register-button
-13:38:21.576 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:21.624 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.xpath: //input[@class='button-1 register-continue-button']
-13:38:21.624 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:31.652 [Test worker] INFO  com.demoWeb.utils.MyListener -- The test have a problem
-13:38:31.652 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:31.652 [Test worker] INFO  com.demoWeb.utils.MyListener -- Method --&gt; findElement
-13:38:31.652 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:31.654 [Test worker] INFO  com.demoWeb.utils.MyListener -- TargetException --&gt; org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@class='button-1 register-continue-button']&quot;}
-  (Session info: chrome=140.0.7339.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.30.0', revision: '509c7f17cc*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.16'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8254dba99ad099dd00f487d577e998a0, findElement {using=xpath, value=//input[@class='button-1 register-continue-button']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\belit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58995}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58995/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8254dba99ad099dd00f487d577e998a0
-13:38:31.654 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:31.654 [Test worker] INFO  com.demoWeb.utils.MyListener -- Object --&gt; ChromeDriver: chrome on windows (8254dba99ad099dd00f487d577e998a0)
-13:38:31.654 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:31.810 [Test worker] ERROR com.demo.tests.TestBase -- FAILED: newUserRegistrationPositiveWithCsvFileTest Screenshot path: C:\JAVA\DemoWebShopHomeWork\screenshots\scree - 1758454711808.png
-13:38:31.810 [Test worker] INFO  com.demo.tests.TestBase -- Stop test
-13:38:31.810 [Test worker] INFO  com.demo.tests.TestBase -- *********************************************************
-13:38:32.882 [Test worker] INFO  com.demoWeb.fw.ApplicationManager -- Tests start in Chrome browser
-13:38:33.664 [Test worker] INFO  com.demo.tests.TestBase -- Start testnewUserRegistrationPositiveWithCsvFileTest
-13:38:33.665 [Test worker] INFO  com.demoWeb.utils.MyListener -- Before find elements By.cssSelector: [href='/register']
-13:38:33.666 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:33.686 [Test worker] INFO  com.demoWeb.utils.MyListener -- List size is 1
-13:38:33.686 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:33.687 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.xpath: //a[text()='Register']
-13:38:33.688 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:33.699 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.xpath: //a[text()='Register']
-13:38:33.700 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:34.115 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: FirstName
-13:38:34.115 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:34.125 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: FirstName
-13:38:34.125 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:34.176 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: FirstName
-13:38:34.176 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:34.182 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: FirstName
-13:38:34.183 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:34.204 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: FirstName
-13:38:34.205 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:34.212 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: FirstName
-13:38:34.212 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:34.238 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: LastName
-13:38:34.238 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:34.249 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: LastName
-13:38:34.250 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:34.294 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: LastName
-13:38:34.294 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:34.298 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: LastName
-13:38:34.298 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:34.321 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: LastName
-13:38:34.321 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:34.325 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: LastName
-13:38:34.325 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:34.352 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Email
-13:38:34.352 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:34.361 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Email
-13:38:34.361 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:34.413 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Email
-13:38:34.413 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:34.413 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Email
-13:38:34.413 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:34.438 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Email
-13:38:34.438 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:34.444 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Email
-13:38:34.444 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:34.476 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Password
-13:38:34.476 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:34.483 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Password
-13:38:34.483 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:34.517 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Password
-13:38:34.517 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:34.517 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Password
-13:38:34.517 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:34.536 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Password
-13:38:34.537 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:34.542 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Password
-13:38:34.542 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:34.578 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: ConfirmPassword
-13:38:34.578 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:34.586 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: ConfirmPassword
-13:38:34.586 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:34.621 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: ConfirmPassword
-13:38:34.621 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:34.629 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: ConfirmPassword
-13:38:34.629 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:34.644 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: ConfirmPassword
-13:38:34.644 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:34.649 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: ConfirmPassword
-13:38:34.650 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:34.679 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: register-button
-13:38:34.679 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:34.698 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: register-button
-13:38:34.698 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
-13:38:34.741 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.xpath: //input[@class='button-1 register-continue-button']
-13:38:34.741 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:38.394 [Test worker] INFO  com.demoWeb.utils.MyListener -- The test have a problem
-13:38:38.394 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:38.394 [Test worker] INFO  com.demoWeb.utils.MyListener -- Method --&gt; findElement
-13:38:38.394 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:38.394 [Test worker] INFO  com.demoWeb.utils.MyListener -- TargetException --&gt; org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: unable to send message to renderer
-  (Session info: chrome=140.0.7339.128)
-Build info: version: '4.30.0', revision: '509c7f17cc*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.16'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [84ed2d767b534620e0a63745b7c18cb9, findElement {using=xpath, value=//input[@class='button-1 register-continue-button']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\belit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59031}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59031/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 84ed2d767b534620e0a63745b7c18cb9
-13:38:38.401 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:38.401 [Test worker] INFO  com.demoWeb.utils.MyListener -- Object --&gt; ChromeDriver: chrome on windows (84ed2d767b534620e0a63745b7c18cb9)
-13:38:38.401 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:38.457 [Test worker] INFO  com.demoWeb.utils.MyListener -- The test have a problem
-13:38:38.457 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:38.457 [Test worker] INFO  com.demoWeb.utils.MyListener -- Method --&gt; getScreenshotAs
-13:38:38.461 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:38.461 [Test worker] INFO  com.demoWeb.utils.MyListener -- TargetException --&gt; org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '4.30.0', revision: '509c7f17cc*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.16'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [84ed2d767b534620e0a63745b7c18cb9, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\belit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59031}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59031/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 84ed2d767b534620e0a63745b7c18cb9
-13:38:38.461 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
-13:38:38.461 [Test worker] INFO  com.demoWeb.utils.MyListener -- Object --&gt; ChromeDriver: chrome on windows (84ed2d767b534620e0a63745b7c18cb9)
-13:38:38.461 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+<pre>14:04:22.531 [Test worker] INFO  com.demoWeb.fw.ApplicationManager -- Tests start in Chrome browser
+14:04:23.356 [Test worker] INFO  com.demo.tests.TestBase -- Start testnewUserRegistrationNegativeTest
+14:04:23.360 [Test worker] INFO  com.demoWeb.utils.MyListener -- Before find elements By.cssSelector: [href='/register']
+14:04:23.361 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:23.407 [Test worker] INFO  com.demoWeb.utils.MyListener -- List size is 1
+14:04:23.408 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:23.410 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.xpath: //a[text()='Register']
+14:04:23.410 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:23.426 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.xpath: //a[text()='Register']
+14:04:23.427 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:23.865 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: FirstName
+14:04:23.865 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:23.885 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: FirstName
+14:04:23.886 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:23.935 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: FirstName
+14:04:23.935 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:23.943 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: FirstName
+14:04:23.944 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:23.980 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: FirstName
+14:04:23.980 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:23.997 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: FirstName
+14:04:23.997 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:24.040 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: LastName
+14:04:24.040 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:24.051 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: LastName
+14:04:24.051 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:24.097 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: LastName
+14:04:24.098 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:24.108 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: LastName
+14:04:24.109 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:24.133 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: LastName
+14:04:24.133 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:24.141 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: LastName
+14:04:24.141 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:24.165 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Email
+14:04:24.165 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:24.175 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Email
+14:04:24.175 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:24.221 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Email
+14:04:24.222 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:24.230 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Email
+14:04:24.231 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:24.253 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Email
+14:04:24.254 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:24.262 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Email
+14:04:24.262 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:24.282 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Password
+14:04:24.282 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:24.302 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Password
+14:04:24.302 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:24.344 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Password
+14:04:24.345 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:24.349 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Password
+14:04:24.349 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:24.374 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Password
+14:04:24.374 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:24.383 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Password
+14:04:24.384 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:24.433 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: ConfirmPassword
+14:04:24.433 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:24.443 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: ConfirmPassword
+14:04:24.445 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:24.488 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: ConfirmPassword
+14:04:24.488 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:24.496 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: ConfirmPassword
+14:04:24.496 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:24.514 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: ConfirmPassword
+14:04:24.515 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:24.522 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: ConfirmPassword
+14:04:24.522 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:24.547 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: register-button
+14:04:24.547 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:24.552 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: register-button
+14:04:24.552 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:25.290 [Test worker] INFO  com.demoWeb.utils.MyListener -- Before find elements By.cssSelector: div[class='validation-summary-errors'] ul li
+14:04:25.290 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:25.326 [Test worker] INFO  com.demoWeb.utils.MyListener -- List size is 1
+14:04:25.326 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:25.326 [Test worker] INFO  com.demo.tests.TestBase -- PASSED: newUserRegistrationNegativeTest
+14:04:25.326 [Test worker] INFO  com.demo.tests.TestBase -- Stop test
+14:04:25.329 [Test worker] INFO  com.demo.tests.TestBase -- *********************************************************
+14:04:26.148 [Test worker] INFO  com.demoWeb.fw.ApplicationManager -- Tests start in Chrome browser
+14:04:26.990 [Test worker] INFO  com.demo.tests.TestBase -- Start testnewUserRegistrationPositiveWithCsvFileTest
+14:04:26.992 [Test worker] INFO  com.demoWeb.utils.MyListener -- Before find elements By.cssSelector: [href='/register']
+14:04:26.993 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:27.038 [Test worker] INFO  com.demoWeb.utils.MyListener -- List size is 1
+14:04:27.038 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:27.039 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.xpath: //a[text()='Register']
+14:04:27.039 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:27.054 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.xpath: //a[text()='Register']
+14:04:27.055 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:27.507 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: FirstName
+14:04:27.507 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:27.520 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: FirstName
+14:04:27.521 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:27.571 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: FirstName
+14:04:27.571 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:27.581 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: FirstName
+14:04:27.582 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:27.605 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: FirstName
+14:04:27.605 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:27.615 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: FirstName
+14:04:27.616 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:27.655 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: LastName
+14:04:27.655 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:27.673 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: LastName
+14:04:27.674 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:27.744 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: LastName
+14:04:27.745 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:27.754 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: LastName
+14:04:27.755 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:27.773 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: LastName
+14:04:27.773 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:27.781 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: LastName
+14:04:27.781 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:27.807 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Email
+14:04:27.807 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:27.818 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Email
+14:04:27.819 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:27.868 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Email
+14:04:27.868 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:27.876 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Email
+14:04:27.876 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:27.898 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Email
+14:04:27.899 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:27.907 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Email
+14:04:27.907 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:27.954 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Password
+14:04:27.954 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:27.965 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Password
+14:04:27.965 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:28.010 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Password
+14:04:28.011 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:28.013 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Password
+14:04:28.013 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:28.059 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Password
+14:04:28.059 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:28.082 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Password
+14:04:28.083 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:28.132 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: ConfirmPassword
+14:04:28.132 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:28.144 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: ConfirmPassword
+14:04:28.144 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:28.197 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: ConfirmPassword
+14:04:28.197 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:28.206 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: ConfirmPassword
+14:04:28.207 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:28.249 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: ConfirmPassword
+14:04:28.249 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:28.278 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: ConfirmPassword
+14:04:28.278 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:28.330 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: register-button
+14:04:28.330 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:28.354 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: register-button
+14:04:28.354 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:29.226 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.xpath: //input[@class='button-1 register-continue-button']
+14:04:29.226 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:29.241 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.xpath: //input[@class='button-1 register-continue-button']
+14:04:29.241 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:29.709 [Test worker] INFO  com.demo.tests.TestBase -- PASSED: newUserRegistrationPositiveWithCsvFileTest
+14:04:29.709 [Test worker] INFO  com.demo.tests.TestBase -- Stop test
+14:04:29.709 [Test worker] INFO  com.demo.tests.TestBase -- *********************************************************
+14:04:30.537 [Test worker] INFO  com.demoWeb.fw.ApplicationManager -- Tests start in Chrome browser
+14:04:31.383 [Test worker] INFO  com.demo.tests.TestBase -- Start testnewUserRegistrationPositiveWithCsvFileTest
+14:04:31.384 [Test worker] INFO  com.demoWeb.utils.MyListener -- Before find elements By.cssSelector: [href='/register']
+14:04:31.384 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:31.419 [Test worker] INFO  com.demoWeb.utils.MyListener -- List size is 1
+14:04:31.419 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:31.420 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.xpath: //a[text()='Register']
+14:04:31.420 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:31.435 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.xpath: //a[text()='Register']
+14:04:31.435 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:31.896 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: FirstName
+14:04:31.897 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:31.913 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: FirstName
+14:04:31.913 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:31.969 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: FirstName
+14:04:31.969 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:31.981 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: FirstName
+14:04:31.982 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:32.005 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: FirstName
+14:04:32.006 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:32.014 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: FirstName
+14:04:32.014 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:32.045 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: LastName
+14:04:32.045 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:32.053 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: LastName
+14:04:32.054 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:32.106 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: LastName
+14:04:32.106 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:32.115 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: LastName
+14:04:32.115 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:32.155 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: LastName
+14:04:32.155 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:32.165 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: LastName
+14:04:32.166 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:32.200 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Email
+14:04:32.200 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:32.210 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Email
+14:04:32.210 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:32.285 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Email
+14:04:32.286 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:32.294 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Email
+14:04:32.294 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:32.319 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Email
+14:04:32.319 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:32.337 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Email
+14:04:32.338 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:32.407 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Password
+14:04:32.407 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:32.421 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Password
+14:04:32.421 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:32.481 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Password
+14:04:32.481 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:32.491 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Password
+14:04:32.491 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:32.523 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Password
+14:04:32.523 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:32.534 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Password
+14:04:32.534 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:32.581 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: ConfirmPassword
+14:04:32.581 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:32.598 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: ConfirmPassword
+14:04:32.598 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:32.654 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: ConfirmPassword
+14:04:32.654 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:32.664 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: ConfirmPassword
+14:04:32.664 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:32.687 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: ConfirmPassword
+14:04:32.687 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:32.695 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: ConfirmPassword
+14:04:32.697 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:32.741 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: register-button
+14:04:32.741 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:32.752 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: register-button
+14:04:32.752 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:33.605 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.xpath: //input[@class='button-1 register-continue-button']
+14:04:33.605 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:33.639 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.xpath: //input[@class='button-1 register-continue-button']
+14:04:33.639 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:34.135 [Test worker] INFO  com.demo.tests.TestBase -- PASSED: newUserRegistrationPositiveWithCsvFileTest
+14:04:34.135 [Test worker] INFO  com.demo.tests.TestBase -- Stop test
+14:04:34.135 [Test worker] INFO  com.demo.tests.TestBase -- *********************************************************
+14:04:35.019 [Test worker] INFO  com.demoWeb.fw.ApplicationManager -- Tests start in Chrome browser
+14:04:35.843 [Test worker] INFO  com.demo.tests.TestBase -- Start testnewUserRegistrationPositiveWithCsvFileTest
+14:04:35.844 [Test worker] INFO  com.demoWeb.utils.MyListener -- Before find elements By.cssSelector: [href='/register']
+14:04:35.845 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:35.869 [Test worker] INFO  com.demoWeb.utils.MyListener -- List size is 1
+14:04:35.869 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:35.869 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.xpath: //a[text()='Register']
+14:04:35.869 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:35.883 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.xpath: //a[text()='Register']
+14:04:35.884 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:36.377 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: FirstName
+14:04:36.377 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:36.400 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: FirstName
+14:04:36.401 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:36.474 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: FirstName
+14:04:36.474 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:36.487 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: FirstName
+14:04:36.488 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:36.526 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: FirstName
+14:04:36.527 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:36.549 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: FirstName
+14:04:36.550 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:36.594 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: LastName
+14:04:36.594 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:36.607 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: LastName
+14:04:36.608 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:36.690 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: LastName
+14:04:36.691 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:36.703 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: LastName
+14:04:36.704 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:36.737 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: LastName
+14:04:36.737 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:36.747 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: LastName
+14:04:36.747 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:36.783 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Email
+14:04:36.783 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:36.793 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Email
+14:04:36.794 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:36.868 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Email
+14:04:36.868 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:36.879 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Email
+14:04:36.880 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:36.910 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Email
+14:04:36.910 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:36.921 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Email
+14:04:36.921 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:36.978 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Password
+14:04:36.978 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:36.991 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Password
+14:04:36.991 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:37.063 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Password
+14:04:37.063 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:37.074 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Password
+14:04:37.074 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:37.103 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Password
+14:04:37.103 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:37.115 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Password
+14:04:37.115 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:37.178 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: ConfirmPassword
+14:04:37.178 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:37.191 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: ConfirmPassword
+14:04:37.191 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:37.260 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: ConfirmPassword
+14:04:37.261 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:37.272 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: ConfirmPassword
+14:04:37.272 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:37.302 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: ConfirmPassword
+14:04:37.303 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:37.312 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: ConfirmPassword
+14:04:37.312 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:37.370 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: register-button
+14:04:37.370 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:37.381 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: register-button
+14:04:37.381 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:38.253 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.xpath: //input[@class='button-1 register-continue-button']
+14:04:38.254 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:38.270 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.xpath: //input[@class='button-1 register-continue-button']
+14:04:38.270 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:38.728 [Test worker] INFO  com.demo.tests.TestBase -- PASSED: newUserRegistrationPositiveWithCsvFileTest
+14:04:38.729 [Test worker] INFO  com.demo.tests.TestBase -- Stop test
+14:04:38.729 [Test worker] INFO  com.demo.tests.TestBase -- *********************************************************
+14:04:39.597 [Test worker] INFO  com.demoWeb.fw.ApplicationManager -- Tests start in Chrome browser
+14:04:40.490 [Test worker] INFO  com.demo.tests.TestBase -- Start testnewUserRegistrationPositiveWithCsvFileTest
+14:04:40.492 [Test worker] INFO  com.demoWeb.utils.MyListener -- Before find elements By.cssSelector: [href='/register']
+14:04:40.492 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:40.526 [Test worker] INFO  com.demoWeb.utils.MyListener -- List size is 1
+14:04:40.527 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:40.530 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.xpath: //a[text()='Register']
+14:04:40.531 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:40.553 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.xpath: //a[text()='Register']
+14:04:40.553 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:41.021 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: FirstName
+14:04:41.021 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:41.049 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: FirstName
+14:04:41.049 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:41.133 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: FirstName
+14:04:41.133 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:41.145 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: FirstName
+14:04:41.145 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:41.202 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: FirstName
+14:04:41.202 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:41.214 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: FirstName
+14:04:41.214 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:41.282 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: LastName
+14:04:41.282 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:41.297 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: LastName
+14:04:41.298 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:41.370 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: LastName
+14:04:41.370 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:41.382 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: LastName
+14:04:41.382 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:41.414 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: LastName
+14:04:41.414 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:41.423 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: LastName
+14:04:41.423 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:41.473 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Email
+14:04:41.475 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:41.511 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Email
+14:04:41.512 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:41.575 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Email
+14:04:41.575 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:41.586 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Email
+14:04:41.586 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:41.618 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Email
+14:04:41.618 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:41.626 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Email
+14:04:41.627 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:41.691 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Password
+14:04:41.691 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:41.705 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Password
+14:04:41.706 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:41.773 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Password
+14:04:41.774 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:41.782 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Password
+14:04:41.782 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:41.806 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: Password
+14:04:41.806 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:41.815 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: Password
+14:04:41.816 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:41.870 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: ConfirmPassword
+14:04:41.870 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:41.886 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: ConfirmPassword
+14:04:41.887 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:41.952 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: ConfirmPassword
+14:04:41.952 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:41.990 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: ConfirmPassword
+14:04:41.990 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:42.028 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: ConfirmPassword
+14:04:42.029 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:42.045 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: ConfirmPassword
+14:04:42.045 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:42.154 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.id: register-button
+14:04:42.154 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:42.170 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.id: register-button
+14:04:42.171 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:43.064 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator will find By.xpath: //input[@class='button-1 register-continue-button']
+14:04:43.065 [Test worker] INFO  com.demoWeb.utils.MyListener -- *******************************
+14:04:43.082 [Test worker] INFO  com.demoWeb.utils.MyListener -- The locator is By.xpath: //input[@class='button-1 register-continue-button']
+14:04:43.083 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+14:04:43.528 [Test worker] INFO  com.demo.tests.TestBase -- PASSED: newUserRegistrationPositiveWithCsvFileTest
+14:04:43.528 [Test worker] INFO  com.demo.tests.TestBase -- Stop test
+14:04:43.529 [Test worker] INFO  com.demo.tests.TestBase -- *********************************************************
 </pre>
 </span>
 </div>
-<div id="tab3" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>????. 21, 2025 1:38:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+<pre>????. 21, 2025 2:04:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 140
-????. 21, 2025 1:38:03 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+????. 21, 2025 2:04:22 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
 WARNING: Unable to find version of CDP to use for 140.0.7339.128. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.30.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-????. 21, 2025 1:38:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+????. 21, 2025 2:04:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 140
-????. 21, 2025 1:38:06 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+????. 21, 2025 2:04:26 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
 WARNING: Unable to find version of CDP to use for 140.0.7339.128. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.30.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-????. 21, 2025 1:38:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+????. 21, 2025 2:04:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 140
-????. 21, 2025 1:38:19 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+????. 21, 2025 2:04:30 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
 WARNING: Unable to find version of CDP to use for 140.0.7339.128. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.30.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-????. 21, 2025 1:38:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+????. 21, 2025 2:04:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 140
-????. 21, 2025 1:38:32 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+????. 21, 2025 2:04:35 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 140.0.7339.128. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.30.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+????. 21, 2025 2:04:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+????. 21, 2025 2:04:39 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
 WARNING: Unable to find version of CDP to use for 140.0.7339.128. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.30.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 </pre>
 </span>
@@ -885,7 +552,7 @@ WARNING: Unable to find version of CDP to use for 140.0.7339.128. You may need t
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.11</a> at 21 сент. 2025 г., 13:38:40</p>
+<a href="http://www.gradle.org">Gradle 8.11</a> at 21 сент. 2025 г., 14:04:46</p>
 </div>
 </div>
 </body>
