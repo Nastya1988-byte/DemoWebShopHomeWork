@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.demo.tests.HomePageTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-09-21T10:33:34.158Z" hostname="DOM" time="0.032">
+  <properties/>
+  <testcase name="isHomePagePresentTest" classname="com.demo.tests.HomePageTest" time="0.032"/>
+  <system-out><![CDATA[12:33:33.078 [Test worker] INFO  com.demoWeb.fw.ApplicationManager -- Tests start in Chrome browser
+12:33:34.112 [Test worker] INFO  com.demo.tests.TestBase -- Start testisHomePagePresentTest
+12:33:34.115 [Test worker] INFO  com.demoWeb.utils.MyListener -- Before find elements By.xpath: //h2[contains(text(),'Welcome to our store')]
+12:33:34.116 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+12:33:34.158 [Test worker] INFO  com.demoWeb.utils.MyListener -- List size is 1
+12:33:34.158 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+12:33:34.159 [Test worker] INFO  com.demoWeb.utils.MyListener -- Before find elements By.xpath: //h2[contains(text(),'Welcome to our store')]
+12:33:34.160 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+12:33:34.190 [Test worker] INFO  com.demoWeb.utils.MyListener -- List size is 1
+12:33:34.190 [Test worker] INFO  com.demoWeb.utils.MyListener -- **********************************************************
+12:33:34.191 [Test worker] INFO  com.demo.tests.TestBase -- PASSED: isHomePagePresentTest
+12:33:34.191 [Test worker] INFO  com.demo.tests.TestBase -- Stop test
+12:33:34.191 [Test worker] INFO  com.demo.tests.TestBase -- *********************************************************
+]]></system-out>
+  <system-err><![CDATA[????. 21, 2025 12:33:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+????. 21, 2025 12:33:33 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 140.0.7339.128. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.30.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+</testsuite>
